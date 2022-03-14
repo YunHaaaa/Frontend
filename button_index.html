@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./button_main.css">
+</head>
+<body>
+    <form action="/login">
+        <input type="image" src="../images/me.jpg" alt="me!">
+    </form>
+
+    <input type="radio" name="radio">
+    <input type="radio" name="radio" checked>
+    <input type="radio" name="radio">
+
+    <form action="/login">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="login">
+        <button type="submit">submit</button>
+        <input type="reset" value="reset">
+        <button type="reset">reset</button>
+    </form>
+
+    <!-- 라벨 가능 요소를 참조 -->
+    <input type="checkbox" name="" id="user-agreement"/>
+    <label for="user-agreement">동의?</label>
+
+    <!-- 라벨 가능 요소를 포함 -->
+    <label><input type="checkbox"/>동의하십니까?</label>
+
+    <label>
+        검색 <input type="search">
+    </label>
+
+    <button onclick="doit()">click!</button>
+    <script>
+        function doit() {
+            alert('clicked!');
+        }
+    </script>
+</body>
+</html>
